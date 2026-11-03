@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ayman Rouissi | Full-Stack Developer</title>
+  <meta name="description" content="Portfolio of Ayman Rouissi, full-stack developer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar" id="navbar">
+    <a href="#hero" class="logo">&lt;AymanRouissi /&gt;</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-text">
+        <p class="hello">Hi, I'm</p>
+        <h1>Ayman Rouissi</h1>
+        <p class="role">I build fast, accessible web apps from database to pixel.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View my projects</a>
+          <a href="#footer" class="btn btn-ghost">Contact me</a>
+        </div>
+      </div>
+
+      <div class="terminal" aria-label="Developer profile written as code">
+        <div class="terminal-bar">
+          <span></span><span></span><span></span>
+          <em>developer.js</em>
+        </div>
+        <pre><code id="typed"></code><span class="cursor" aria-hidden="true"></span></pre>
+        <div class="term-console">
+          <div class="term-out" id="termOut" aria-live="polite"></div>
+          <label class="term-line">
+            <span class="prompt">visitor@ayman:~$</span>
+            <input id="termIn" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="type help and press Enter" aria-label="Terminal command">
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section alt" id="about">
+      <h2>About me</h2>
+      <div class="about-grid">
+        <figure class="photo">
+          <span class="photo-empty" aria-hidden="true"><i class="fa-solid fa-user"></i></span>
+          <img src="WhatsApp Image 2026-10-29 at 17.01.42.jpeg" alt="Portrait of Ayman Rouissi" width="560" height="700" decoding="async" fetchpriority="high" onerror="this.remove()">
+          <figcaption><span class="dot"></span>Available for work</figcaption>
+        </figure>
+        <p>I'm a full-stack developer who enjoys turning messy problems into simple, reliable products. I care about clean code, readable interfaces and performance you can feel.</p>
+        <p>When I'm not coding, I contribute to open source, write about what I learn and explore new tools. Replace this text with your own story.</p>
+        <ul class="facts">
+          <li><i class="fa-solid fa-location-dot"></i> Hay Baraka, Moulay Rachid</li>
+          <li><i class="fa-solid fa-envelope"></i> aymanrouissi.off@gmail.com</li>
+          <li><i class="fa-solid fa-circle-check"></i> Open to new opportunities</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+      <h2>Education</h2>
+      <div class="timeline">
+        <article class="t-item">
+          <time>2019 – 2022</time>
+          <h3>B.Sc. in Computer Science</h3>
+          <p class="where">University Name</p>
+          <p>Algorithms, databases, software engineering. Graduation project on real-time web applications.</p>
+        </article>
+        <article class="t-item">
+          <time>2018</time>
+          <h3>Web Development Bootcamp</h3>
+          <p class="where">Academy Name</p>
+          <p>Intensive training in HTML, CSS, JavaScript and Git workflows.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section alt" id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Frontend</h3>
+          <ul class="chips">
+            <li><i class="fa-brands fa-html5"></i> HTML</li>
+            <li><i class="fa-brands fa-css3-alt"></i> CSS</li>
+            <li><i class="fa-brands fa-js"></i> JavaScript</li>
+            <li><i class="fa-brands fa-react"></i> React</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Backend</h3>
+          <ul class="chips">
+            <li><i class="fa-brands fa-node-js"></i> Node.js</li>
+            <li><i class="fa-brands fa-python"></i> Python</li>
+            <li><i class="fa-solid fa-database"></i> SQL</li>
+            <li><i class="fa-solid fa-plug"></i> REST APIs</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Tools</h3>
+          <ul class="chips">
+            <li><i class="fa-brands fa-git-alt"></i> Git</li>
+            <li><i class="fa-brands fa-github"></i> GitHub</li>
+            <li><i class="fa-brands fa-docker"></i> Docker</li>
+            <li><i class="fa-solid fa-terminal"></i> Linux</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <article class="t-item">
+          <time>2023 – Present</time>
+          <h3>Full-Stack Developer</h3>
+          <p class="where">Company Name</p>
+          <p>Built and shipped features used by thousands of users. Cut page load time by 40% and introduced automated testing.</p>
+        </article>
+        <article class="t-item">
+          <time>2022 – 2023</time>
+          <h3>Junior Web Developer</h3>
+          <p class="where">Another Company</p>
+          <p>Developed responsive websites and internal tools, working closely with designers and product managers.</p>
+        </article>
+        <article class="t-item">
+          <time>2021</time>
+          <h3>Intern, Software Development</h3>
+          <p class="where">Startup Name</p>
+          <p>Fixed bugs, wrote unit tests and built my first production API.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section alt" id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <article class="project">
+          <h3>TaskFlow</h3>
+          <p>A collaborative task board with real-time updates and drag-and-drop.</p>
+          <p class="stack">React, Node.js, WebSocket</p>
+          <div class="links">
+            <a href="#" aria-label="TaskFlow source code"><i class="fa-brands fa-github"></i> Code</a>
+            <a href="#" aria-label="TaskFlow live demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+          </div>
+        </article>
+        <article class="project">
+          <h3>WeatherLens</h3>
+          <p>A forecast app that turns raw API data into clear charts and daily summaries.</p>
+          <p class="stack">JavaScript, Chart.js, REST</p>
+          <div class="links">
+            <a href="#" aria-label="WeatherLens source code"><i class="fa-brands fa-github"></i> Code</a>
+            <a href="#" aria-label="WeatherLens live demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+          </div>
+        </article>
+        <article class="project">
+          <h3>ShortLink</h3>
+          <p>A URL shortener with click analytics and an API for developers.</p>
+          <p class="stack">Python, Flask, PostgreSQL</p>
+          <div class="links">
+            <a href="#" aria-label="ShortLink source code"><i class="fa-brands fa-github"></i> Code</a>
+            <a href="#" aria-label="ShortLink live demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="footer">
+    <h2>Let's build something together</h2>
+    <p>Have a project or an opportunity in mind? Send me a message.</p>
+    <a href="mailto:aymanrouissi.off@gmail.com" class="btn btn-primary">aymanrouissi.off@gmail.com</a>
+    <ul class="socials">
+      <li><a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+      <li><a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+      <li><a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a></li>
+      <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+      <li><a href="mailto:aymanrouissi.off@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a></li>
+    </ul>
+    <p class="copy">&copy; <span id="year"></span> Ayman Rouissi. Built with HTML, CSS and JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
